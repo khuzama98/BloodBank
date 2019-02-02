@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- Hide this line for IE (needed for Firefox and others) -->
+    <![if !IE]>
+    <link rel="icon" href="../icon/Icon.png" type="image/x-icon" />
+    <![endif]>
+    <!-- This is needed for IE -->
+    <link rel="shortcut icon" href="../icon/Icon.png" type="image/ico">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="JavaScript:void(0)">
+                    <div class="blood">
+                        <span>Blood</span>Bank
+                    </div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" id="dd1">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ti-user"></i>
+                            <!-- <p class="username"></p> -->
+                            <p id="username" style="margin:0px;display:inline-block;">UserName</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                            <li><a href="./profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="JavaScript:void(0)" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li id="signup">
+                        <a href="../pages/signup.html">
+                            <span class="glyphicon glyphicon-user"></span>
+                            Signup
+                        </a>
+                    </li>
+                    <li id="login">
+                        <a href="../pages/signin.html">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid" style="background-color:#EFF1F3;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Profile</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Blood Bank > Profile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container containerPadding" id="userDetails">
+        
+        <!-- <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="../img/empty-avatar.png" class="imgMargin" alt="profilepic" id="profilepic" style="height:280px;">
+                <a href="../pages/upload.html" class="chngImg"><label>Change Image</label></a>
+            </div>
+            <div class="col-md-4">
+                <div class="userInfo">
+                    <p><span class="bold">Email:</span> ${email}</p>
+                    <p><span class="bold">Name:</span> ${userName}</p>
+                    <p><span class="bold">Gender:</span> ${gender}</p>
+                    <p><span class="bold">Contact No:</span> ${phoneno}</p>
+                    <p><span class="bold">Blood Type:</span> ${userblood}</p>
+                    <p><span class="bold">User Type:</span> ${userType}</p>
+                    <p><span class="bold">Address:</span> ${address}</p>
+                    <p><span class="bold">City:</span> ${city}</p>
+                    <div class="text-right btnCenter">
+                        <button class="btn btn-primary imgMargin">Edit Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script src="../js/authenticated.js"></script>
+</body>
+</html>

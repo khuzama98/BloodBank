@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- Hide this line for IE (needed for Firefox and others) -->
+    <![if !IE]>
+    <link rel="icon" href="./icon/Icon.png" type="image/x-icon" />
+    <![endif]>
+    <!-- This is needed for IE -->
+    <link rel="shortcut icon" href="./icon/Icon.png" type="image/ico">
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="JavaScript:void(0)">
+                            <!-- <img src="./img/Blur_64px.png" class="bloodIcon"> -->
+                            <div class="blood">
+                                <span>Blood</span>Bank
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- <li class="dropdown" id="dd1">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-user"></i>
+                                    <p id="username" style="margin:0px;display:inline-block;">UserName</p>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="JavaScript:void(0)"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                                    <li><a href="JavaScript:void(0)"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                                    <li><a href="JavaScript:void(0)" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                                </ul>
+                            </li> -->
+                            <li>
+                                <a href="./pages/signup.html" >
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Signup
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pages/signin.html">
+                                    <span class="glyphicon glyphicon-log-in"></span>
+                                    Login
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+        <div class="bloodImg">
+            <div class="cusOverlay">
+                <div class="container conPosition">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="newDiv">DONATE BLOOD</div>
+                            <div class="newDiv">& SAVE A LIFE.</div>
+                            <a href="./pages/signin.html" class="navbar-brand donateButton">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container containerPadding">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="headingPadding">It’s easy to become a blood donor...</h1>
+                    <h4 class="headingPadding">Giving blood is a quick and enriching way to give back to your community..</h4>
+                    <p style="color:gray">
+                        By donating blood, you can help families who have been in accidents or experienced trauma, mothers experiencing labor complications, fathers having heart surgery, children undergoing chemotherapy treatments, premature babies trying to breathe with tiny lungs, or grandparents suffering from severe anemia. In as little as few minutes, you can become someones unnamed, unknown, but all-important hero. Saving a life is noble work that starts very simply and easily..
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="imgMargin" src="./img/custom1.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#f1f1f1" class="container-fluid containerPadding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" id="largeScreen">
+                        <img src="./img/donationChart.png" width="100%">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Understanding Your Blood Type</h1>
+                        <p class="headingPadding">There are four major blood groups determined by the presence or absence of two antigens – A and B – on the surface of red blood cells. In addition to the A and B antigens, there is a protein called the Rh factor, which can be either present (+) or absent (–), creating the 8 most common blood types (A+, A-, B+, B-, O+, O-, AB+, AB-).</p>
+                    </div>
+                    <div class="col-md-6" id="smallScreen">
+                            <img src="./img/donationChart.png" width="100%">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container containerPadding">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>People who can donate blood.</h1>
+                    <p>
+                        Most people can give blood. You can give blood if you:
+                        <ul>
+                            <li>are mentally and physically fit and healthy.</li>
+                            <li>weight is between 50kg to 160kg.</li>
+                            <li>are between 17 and 66 (or 70 if you have given blood before)</li>
+                            <li>are over 70 and have given blood in the last two years</li>
+                        </ul>
+                    </p>
+                    <h1>People who can't donate blood.</h1>
+                    <p>
+                        You must not donate blood if you:
+                        <ul>
+                            <li>have history of Jaundice/Hepatitis.</li>
+                            <li>have history of serious illness.</li>
+                            <li>have a drug addiction.</li>
+                            <li>have major surgery/expected surgery.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="imgMargin" src="./img/custom.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid containerPadding" style="background-color:#f1f1f1;margin-bottom: 40px;">
+            <div class="container">
+                <div class="row text-center">
+                    <img src="./img/19279-200.png" width="100px" height="100px">
+                </div>
+                <div class="row text-center">
+                    <h1>The measure of life is not its duration,<br>but its donation.</h1>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid text-center" style="background-color:black;color: white">
+                <h4>Designed by KHUZAMA SHAHID.</h4>
+            </div>
+        </footer>
+
+        
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script src="./js/auth.js"></script> 
+</body>
+</html>

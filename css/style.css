@@ -1,0 +1,209 @@
+body{
+    font-family: "PoppinsRegular" , sans-serif !important;
+}
+.blood{
+    display: inline-block;
+    font-size: 1.5em;
+}
+.blood span{
+    font-weight: bold;
+    color: #F42329;
+}
+.bloodIcon{
+    height: 20px;
+    display: inline-block !important;
+}
+.navbar{
+    margin-bottom: 0px !important;
+}
+.bloodImg{
+    width: 100%;
+    min-height: 550px;
+    background-image: url("../img/banner1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conPosition{
+    position: relative;
+    top: 100px;
+}
+.newDiv{
+    font-family: "Poppins" !important;
+    font-size: 4.9em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.cusOverlay{
+    color: white;
+    min-height: 550px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336)
+}
+.bannerDoner{
+    padding: 20px;
+    font-size: 2.3em;
+}
+.positionUp{
+    background-image: url("../img/newsletter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.containerPadding{
+    padding: 40px 0px;
+}
+.headingPadding{
+    padding: 20px 0px;
+}
+.imgMargin{
+    margin-top: 30px;
+}
+.donateButton{
+    color: white;
+    border: 2px solid white;
+}
+.donateButton:hover{
+    background-color: white;
+    color: black;
+    transition: 500ms ease all
+}
+#smallScreen{
+    display: none;
+}
+.customDrop{
+    width: 100%;
+}
+/* #profile{
+    display: none;
+} */
+#profilepic{
+    border-radius: 50%;
+    height: 340px;
+    width: 100%;
+}
+#uploader{
+    visibility: hidden;
+}
+.bold{
+    font-weight: bold;
+}
+.userInfo{
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 1.3em;
+}
+#dd1,#signup,#login{
+    display: none;
+}
+.team-img{
+    width: 180px;
+    height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -86px;
+    z-index: 5;
+}
+.team-body{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 24px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(29,34,47,0.1);
+    text-align: center;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.team-item{
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+}
+.team-title a{
+    /* font-family: 'Roboto Slab', serif; */
+    font-size: 20px;
+    font-weight: 700;
+    color: #384158;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.team-subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: #76777a;
+    margin-top: 6px;
+}
+.chngImg{
+    display: inline-block;
+    margin-top: 20px;
+}
+#availiblity{
+    display: inline-block;
+}
+#selector{
+    margin-top: 4px;
+}
+.alert{
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+}
+.glyphicon{
+    top: 2px !important;
+    font-size: 1.1em;
+}
+#skipBtn,#cancelBtn{
+    display: none;
+}
+.btn{
+    margin-top: 12px !important;
+}
+
+@media screen and (max-width:768px){
+    #smallScreen{
+        display: block;
+    }
+    #largeScreen{
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px){
+    .newDiv{
+        font-size: 4.5em;
+    }
+    #userDetails{
+        text-align: center;
+    }
+    .userInfo{
+        margin-left: 0px;
+    }
+    .btnCenter{
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width:375px){
+    .newDiv{
+        font-size: 3.9em;
+    }
+}
+@media screen and (max-width:320px){
+    .newDiv{
+        font-size: 3.3em;
+    }
+}
+@media screen and (max-width:450px) and (min-width:375px){
+    #profilepic{
+        width: 340px;
+    }
+
+}

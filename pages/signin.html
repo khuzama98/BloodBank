@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- Hide this line for IE (needed for Firefox and others) -->
+    <![if !IE]>
+    <link rel="icon" href="../icon/Icon.png" type="image/x-icon" />
+    <![endif]>
+    <!-- This is needed for IE -->
+    <link rel="shortcut icon" href="../icon/Icon.png" type="image/ico">
+</head>
+<body onload="checkAuth()">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="JavaScript:void(0)">
+                    <div class="blood">
+                        <span>Blood</span>Bank
+                    </div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" id="dd1">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ti-user"></i>
+                            <p id="username" style="margin:0px;display:inline-block;">UserName</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                            <li><a href="./profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="JavaScript:void(0)" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            <span class="glyphicon glyphicon-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/signup.html">
+                            <span class="glyphicon glyphicon-user"></span>
+                            SignUp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-md-6 col-xl-6 col-md-offset-3 col-xl-offset-3">
+        <h1 class="text-center">Sign In</h1>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+        <br>
+        <div class="col-md-12 text-right">
+            <button class="btn btn-primary" onClick="signIn()">Sign In</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
