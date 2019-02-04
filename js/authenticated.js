@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyBsyIA8XdBKCaX5UJm9QCa7qW2lwp1SZI4",
-    authDomain: "project-bloodbank1.firebaseapp.com",
-    databaseURL: "https://project-bloodbank1.firebaseio.com",
-    projectId: "project-bloodbank1",
-    storageBucket: "project-bloodbank1.appspot.com",
-    messagingSenderId: "240032509933"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
   };
   firebase.initializeApp(config);
 
